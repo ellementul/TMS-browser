@@ -26,9 +26,9 @@
     await import('./index.js')
 
     console.log('getting url....')
-    const url = window.location.origin + "/"
+    const url = window.location.origin + window.location.pathname
 
-    await App.Factory(url)
+    // await App.Factory(url)
   </script> 
 </body>
 </html>
