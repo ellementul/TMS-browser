@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Context Menu</title>
+</head>
+<style>
+  html {
+    overflow: hidden;
+  }
+  body {
+    margin: 0;
+  }
+  div#stats {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    width: max(200px, 10vw, 10vh);
+    height: max(100px, 6vh, 6vw);
+    opacity: 0.8;
+    user-select: none;
+  }
+</style>
+<body>
+  <script  type="module">
+    await import('./index.js')
+
+    console.log('getting url....')
+    const url = window.location.origin + "/"
+
+    await App.Factory(url)
+  </script> 
+</body>
+</html>
