@@ -4952,7 +4952,7 @@ eval("const {\n  UnitedEventsEnv,\n  Room\n} = __webpack_require__(/*! @ellement
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Logging: () => (/* binding */ Logging)\n/* harmony export */ });\nfunction Logging() {\n  return function (payload) {\n    switch (payload.message.access) {\n      case \"Local\":\n        console.log(\"Client\", payload.message);\n        break;\n      default:\n        null;\n    }\n  };\n}\n\n\n//# sourceURL=webpack://App/./TooManyBulletsClient/src/logging.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Logging: () => (/* binding */ Logging)\n/* harmony export */ });\nfunction Logging() {\n  return function (payload) {\n    switch (payload.message.system) {\n      case \"Timing\":\n        // console.log(payload.message)\n        break;\n      case \"PlayersManagment\":\n        // console.log(payload.message)\n        break;\n      case \"TileMap\":\n        // console.log(payload.message)\n        break;\n      case \"Characters\":\n        // console.log(payload.message)\n        break;\n      case \"Actions\":\n        // console.log(payload.message)\n        break;\n      case \"World\":\n        // console.log(payload.message)\n        break;\n      default:\n        console.log(payload.message.system);\n        null;\n    }\n  };\n}\n\n\n//# sourceURL=webpack://App/./TooManyBulletsClient/src/logging.js?");
 
 /***/ }),
 
