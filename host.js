@@ -1213,7 +1213,7 @@ eval("const {\n  UnitedEventsEnv,\n  Room\n} = __webpack_require__(/*! @ellement
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Logging: () => (/* binding */ Logging)\n/* harmony export */ });\nfunction Logging() {\n  return function (payload) {\n    switch (payload.message.access) {\n      case \"Local\":\n        break;\n      default:\n        null;\n    }\n  };\n}\n\n\n//# sourceURL=webpack://App/./TooManyBulletsHost/src/logging.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Logging: () => (/* binding */ Logging)\n/* harmony export */ });\nfunction Logging() {\n  return function (payload) {\n    switch (payload.message.access) {\n      case \"Local\":\n        // console.log(payload.message)\n        break;\n      default:\n        null;\n    }\n  };\n}\n\n\n//# sourceURL=webpack://App/./TooManyBulletsHost/src/logging.js?");
 
 /***/ }),
 
