@@ -110,7 +110,7 @@
     <script  type="module">
       const { Factory } = await import('./index.js')
 
-      console.log('getting url....')
+      console.info('Getting url....')
       const url = new URL(window.location.href)
 
       await Factory(url)
